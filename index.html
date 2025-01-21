@@ -6,6 +6,35 @@
     <title>Comics</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS personalizado para responsividade */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Estilo adicional para melhorar a legibilidade */
+        h1, h2 {
+            color: #007bff;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,9 +54,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#manhwas">O que são manhwas?</a>
                     </li>
-                  <li class="nav-item">
-                        <a class="nav-link" href="#tiposmanhuas">Tipos de manhuas</a>
-                    </li>
                 </ul>
             </div>
         </nav>
@@ -37,25 +63,25 @@
         <section id="inicio" class="container mt-5">
             <h1>Bem-vindo ao mundo dos Manhwas e Manhuas</h1>
             <p>Explore as histórias fascinantes que esses quadrinhos oferecem.</p>
-            <img src="image1.jpg" alt="Imagem de exemplo de manhwa" class="img-fluid">
+            <img src="image1.jpg" alt="Imagem de exemplo de manhwa" class="img-fluid mb-3">
             <div class="video-container">
-              <video controls aria-label="Video sobre manhwas">
-                  <source src="manhwa.mp4" type="video/mp4">
-                  Seu navegador não suporta o vídeo.
-              </video>
-          </div>
+                <video controls aria-label="Video sobre manhwas">
+                    <source src="manhwa.mp4" type="video/mp4">
+                    Seu navegador não suporta o vídeo.
+                </video>
+            </div>
         </section>
 
         <section id="manhuas" class="container mt-5">
             <h2>O que são manhuas?</h2>
             <p>Manhuas são quadrinhos chineses que possuem um estilo artístico único e histórias envolventes.</p>
-            <img src="image2.jpg" alt="Imagem de exemplo de manhua" class="img-fluid">
+            <img src="image2.jpg" alt="Imagem de exemplo de manhua" class="img-fluid mb-3">
         </section>
 
         <section id="manhwas" class="container mt-5">
             <h2>O que são manhwas?</h2>
             <p>Manhwas são quadrinhos sul-coreanos, geralmente lidos da esquerda para a direita, com temas variados.</p>
-            <img src="image3.jpg" alt="Imagem de exemplo de manhwa" class="img-fluid">
+            <img src="image3.jpg" alt="Imagem de exemplo de manhwa" class="img-fluid mb-3">
         </section>
     </main>
 
@@ -68,14 +94,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
     <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 </body>
 </html>
