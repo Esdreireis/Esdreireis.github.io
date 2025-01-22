@@ -1,0 +1,105 @@
+/* Estilos personalizados */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Melhorar a acessibilidade do foco */
+a:focus, button:focus {
+    outline: 3px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+/* Skip link para navegação rápida e fácil*/
+.pular-para-conteudo {
+    background: #4a4a4a;
+    color: #fff;
+    font-weight: 700;
+    left: 35%;
+    padding: 8px 1px;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 1000;
+    text-decoration: none;
+    border-radius: 0 0 4px 4px;
+}
+
+.pular-para-conteudo:hover, .pular-para-conteudo:focus {
+    background: #333;
+    color: #fff;
+}
+
+/* Personalização do navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #4CAF50 !important;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #4CAF50 !important;
+}
+
+/* Estilização das seções */
+section {
+    padding: 2rem 0;
+}
+
+/* Estilização dos cards */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+}
+
+/* Responsividade adicional */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+/* CSS Personalizado Formulário */
+.error-message {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 0.25rem;
+}
+.success-message {
+    color: #198754;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
